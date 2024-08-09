@@ -1,165 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea-house</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a256cb553f.js" crossorigin="anonymous"></script>
-<!--tailwind-custom-color-->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a256cb553f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--tailwind-custom-color-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200, 500, 400, 600, 700, 800;
+        font-style: normal;
       }
-    }
-  </script>
-<style>
-  .font-manrope {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200,500,400,600,700,800;
-  font-style: normal;
-}
-</style>
-</head>
-<body class="font-manrope">
+    </style>
+  </head>
+  <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero mt-10">
-            <div class="hero-content flex-col lg:flex-row">
-              
+      <div class="hero mt-10">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The<br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn text-white  bg-gradient-to-r from-[#FF8938] to-[#F00] border-white">Explore more</button>
+          </div>
+          <div>
+            <img src="/images/banner.png" class="max-w-sm" />
+            <div
+              class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"
+            >
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
               <div>
-                <h1 class="text-7xl font-extrabold">It's good <br>
-                tea time at The<br>
-                Tea House
-                </h1>
-                <p class="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <button class="btn btn-primary">Explore more</button>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
               </div>
-             <div>
-                <img
-                src="/images/banner.png"
-                class="max-w-sm" />
-                <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
-                    <i class="fa-solid fa-star text-3xl text-amber-400"></i>
-                    <div>
-                        <h3 class="text-3xl">5.00</h3>
-                        <p>Trust Pilot Ratings</p>
-                    </div>
-                </div>
-             </div>
             </div>
           </div>
+        </div>
+      </div>
     </header>
     <main class="container mx-auto">
-        <section class="text-center my-24 mb-5">
-            <h2 class="text-5xl font-extrabold">Our Featured Products</h2>
-            <p class="lg:max-w-3xl mx-auto mb-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore autem odio numquam explicabo alias architecto quasi commodi maiores distinctio!
+      <section class="text-center my-24 mb-5">
+        <h2 class="text-5xl font-extrabold">Our Featured Products</h2>
+        <p class="lg:max-w-3xl mx-auto mb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque labore
+          autem odio numquam explicabo alias architecto quasi commodi maiores
+          distinctio!
+        </p>
+        <!--Card-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!--card1-->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8"
+          >
+            <figure>
+              <img src="/images/tea-1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <!--card2-->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8"
+          >
+            <figure>
+              <img src="/images/tea-2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <!--card3-->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8"
+          >
+            <figure>
+              <img src="/images/tea-3.png" alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <!--card4-->
+          <div
+            class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-8"
+          >
+            <figure>
+              <img src="/images/tea-4.png" alt="Shoes" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--fresh tea-->
+      <section class="my-24 flex flex-col lg:flex-row gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
+          <div
+            class="rounded-xl bg-gradient-to-r from-red-600 to-amber-500 opacity-10 h-36"
+          ></div>
+          <div
+            class="row-span-2 rounded-xl px-8 py-12 flex justify-center items-center bg-[#E6A6231A]"
+          >
+            <img src="/images/fresh-1.png" alt="" />
+          </div>
+          <div
+            class="row-span-2 rounded-xl px-8 py-12 flex justify-center items-center bg-[#5776391A]"
+          >
+            <img src="/images/fresh-2.png" alt="" />
+          </div>
+          <div
+            class="rounded-xl bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF] h-36"
+          ></div>
+        </div>
+        <div class="space-y-5 flex-1">
+          <h3 class="text-5xl font-extrabold">
+            Great Tea, Freshly<br />
+            Presented
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+            beatae, dolorem eaque dolorum culpa molestias repellendus? Minima
+            velit asperiores maiores cupiditate porro ab earum dignissimos.
+            Natus nihil beatae sequi placeat delectus. Quae facilis,
+            voluptatibus consequuntur repudiandae ipsa maxime repellendus?
+            Alias.
+          </p>
+          <h4 class="text-xl font-extrabold mt-8">Premum Tea</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+            obcaecati molestiae fuga molestias sed illo sunt placeat, facere
+            optio exercitationem.
+          </p>
+          <h4 class="text-xl font-extrabold">Unique Taste</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+            obcaecati molestiae fuga molestias sed illo sunt placeat, facere
+            optio exercitationem.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col lg:flex-row gap-12 my-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24"
+      >
+        <div class="flex items-center lg:pr-28">
+          <div class="space-y-5">
+            <h2 class="text-5xl font-extra-bold text-white">
+              Meet Our Super <br />
+              Clients
+            </h2>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              nam! Inventore quisquam neque saepe nobis, eos voluptatum possimus
+              magnam libero, ducimus quas quos qui delectus eveniet explicabo!
+              Fuga, hic cum!
             </p>
-            <!--Card-->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!--card1-->
-                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl p-8">
-                    <figure>
-                      <img
-                        src="/images/tea-1.png"
-                        alt="Shoes" />
-                    </figure>
-                    <div class="card-body text-center">
-                      <h2 class="text-2xl font-bold">Milk Tea</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      
-                    </div>
-                  </div>
-                <!--card2-->
-                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]   shadow-xl p-8">
-                    <figure>
-                      <img
-                        src="/images/tea-2.png"
-                        alt="Shoes" />
-                    </figure>
-                    <div class="card-body text-center">
-                      <h2 class="text-2xl font-bold">Milk Tea</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      
-                    </div>
-                  </div>
-                <!--card3-->
-                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]   shadow-xl p-8">
-                    <figure>
-                      <img
-                        src="/images/tea-3.png"
-                        alt="Shoes" />
-                    </figure>
-                    <div class="card-body text-center">
-                      <h2 class="text-2xl font-bold">Milk Tea</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      
-                    </div>
-                  </div>
-                <!--card4-->
-                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]   shadow-xl p-8">
-                    <figure>
-                      <img
-                        src="/images/tea-4.png"
-                        alt="Shoes" />
-                    </figure>
-                    <div class="card-body text-center">
-                      <h2 class="text-2xl font-bold">Milk Tea</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      
-                    </div>
-                  </div>
+            <button class="btn btn-primary">show all</button>
+          </div>
+        </div>
+        <div class="relative">
+          <!--Review-->
+          <div class="opacity-45 mb-16 relative z-10 p-10 rounded-lg bg-white">
+            <img
+              class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
+              src="/images/client.png"
+              alt=""
+            />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+                quam quod eius optio ex animi eum maxime nisi sunt aliquam!
+              </p>
+              <h4 class="font-bold mt-5">Iham Huda</h4>
+              <p class="font-medium">Busineeman</p>
+              <div class="flex justify-end">
+                <img src="/images/circles.png" alt="" />
+              </div>
             </div>
-        </section>
-        <!--fresh tea-->
-        <section class="my-24 flex flex-col lg:flex-row gap-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
-                <div class="rounded-xl bg-gradient-to-r from-red-600 to-amber-500 opacity-10 h-36"></div>
-                <div class="row-span-2 rounded-xl px-8 py-12 flex justify-center items-center bg-[#E6A6231A]"><img src="/images/fresh-1.png" alt=""></div>
-                <div class="row-span-2 rounded-xl px-8 py-12 flex justify-center items-center bg-[#5776391A]"><img src="/images/fresh-2.png" alt=""></div>
-                <div class="rounded-xl bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF]  h-36"></div>
-
+          </div>
+          <!--currentReview-->
+          <div
+            class="z-20 absolute top-40 lg:-left-24 lg:w-[430px] p-10 rounded-lg bg-white"
+          >
+            <img
+              class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
+              src="/images/client.png"
+              alt=""
+            />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+                quam quod eius optio ex animi eum maxime nisi sunt aliquam!
+              </p>
+              <h4 class="font-bold mt-5">Iham Huda</h4>
+              <p class="font-medium">Busineeman</p>
+              <div class="flex justify-end">
+                <img src="/images/circles.png" alt="" />
+              </div>
             </div>
-            <div class="space-y-5 flex-1">
-                <h3 class="text-5xl font-extrabold">Great Tea, Freshly<br> Presented</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil beatae, dolorem eaque dolorum culpa molestias repellendus? Minima velit asperiores maiores cupiditate porro ab earum dignissimos. Natus nihil beatae sequi placeat delectus. Quae facilis, voluptatibus consequuntur repudiandae ipsa maxime repellendus? Alias.</p>
-                <h4 class="text-xl font-extrabold mt-8">Premum Tea</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente obcaecati molestiae fuga molestias sed illo sunt placeat, facere optio exercitationem.</p>
-                <h4 class="text-xl font-extrabold">Unique Taste</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente obcaecati molestiae fuga molestias sed illo sunt placeat, facere optio exercitationem.</p>
+          </div>
+          <!--previousReview-->
+          <div class="z-10 opacity-45 relative p-10 rounded-lg bg-white">
+            <img
+              class="absolute -left-5 -top-5 border-4 border-white rounded-full bg-white"
+              src="/images/client.png"
+              alt=""
+            />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+                quam quod eius optio ex animi eum maxime nisi sunt aliquam!
+              </p>
+              <h4 class="font-bold mt-5">Iham Huda</h4>
+              <p class="font-medium">Busineeman</p>
+              <div class="flex justify-end">
+                <img src="/images/circles.png" alt="" />
+              </div>
             </div>
-        </section>
-        <section class=" flex flex-col lg:flex-row gap-12 my-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
-            <div class="space-y-5">
-                <h2 class="text-5xl font-extra-bold text-white">Meet Our Super <br> Clients</h2>
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nam! Inventore quisquam neque saepe nobis, eos voluptatum possimus magnam libero, ducimus quas quos qui delectus eveniet explicabo! Fuga, hic cum!</p>
-                <button class="btn btn-primary">show all</button>
-            </div>
-            <div class="relative p-10 rounded-lg bg-white">
-                <img class="absolute -left-5 -top-5" src="/images/client.png" alt="">
-                <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quam quod eius optio ex animi eum maxime nisi sunt aliquam!</p>
-                <h4 class="font-bold mt-5">Iham Huda</h4>
-                <p class="font-medium">Busineeman</p>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
+    <!--Footer section-->
+    <footer class="bg-base-200 text-base-content lg:px-48 py-10">
+      <div class="flex justify-between my-24">
+        <img src="/images/cup.png" alt="" />
 
+        <p>
+          <span> Ready to get started? </span>
+          <button class="btn btn-primary  bg-gradient-to-r from-[#FF8938] to-[#F00] border-white">Get started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-4 bg-transparent border-b-2 border-black outline-none "
+              />
+              <button class="btn btn-primary rounded-full  bg-gradient-to-r from-[#FF8938] to-[#F00] border-white"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <aside>
+        <p class="mt-10 text-center">
+          Copyright © - All right reserved by ACME Industries Ltd
+        </p>
+      </aside>
     </footer>
-</body>
+  </body>
 </html>
